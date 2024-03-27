@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smoothie Machine</h1>
+        <div class="smoothie-form">
+            <label for="flavor">Select Flavor:</label>
+            <select name="flavor" id="flavor">
+                <option value="strawberry-banana">Strawberry Banana</option>
+                <option value="mango-pineapple">Mango Pineapple</option>
+                <option value="berry-blast">Berry Blast</option>
+                <option value="green-detox">Green Detox</option>
+                <option value="tropical-bliss">Tropical Bliss</option>
+                <option value="blueberry-delight">Blueberry Delight</option>
+                <option value="kiwi-cooler">Kiwi Cooler</option>
+                <option value="peach-passion">Peach Passion</option>
+                <option value="apple-cinnamon">Apple Cinnamon</option>
+                <option value="watermelon-wonder">Watermelon Wonder</option>
+                <option value="orange-crush">Orange Crush</option>
+                <option value="carrot-kick">Carrot Kick</option>
+                <option value="cucumber-refresh">Cucumber Refresh</option>
+                <option value="cherry-cheer">Cherry Cheer</option>
+                <option value="pineapple-splash">Pineapple Splash</option>
+          
+            </select>
+            <label for="size">Select Size:</label>
+            <select name="size" id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <div class="extras">
+                <label>Extra Ingredients:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="protein" name="extras" value="protein">
+                    <label for="protein">Protein Powder</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="spinach" name="extras" value="spinach">
+                    <label for="spinach">Spinach</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="chia-seeds" name="extras" value="chia-seeds">
+                    <label for="chia-seeds">Chia Seeds</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="flax-seeds" name="extras" value="flax-seeds">
+                    <label for="flax-seeds">Flax Seeds</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="almond-milk" name="extras" value="almond-milk">
+                    <label for="almond-milk">Almond Milk</label>
+                </div>
+                
+            </div>
+            <button id="orderBtn">Order Now</button>
+        </div>
+        <div id="smoothieOutput" class="smoothie-output"></div>
+    </div>
+    <script src="smoothie.js"></script>
+</body>
+</html>
